@@ -1,0 +1,62 @@
+
+.searchPageContainer_searchPage{
+    margin-top: 120px;
+    margin-left: 100px;
+
+}
+.searchResultContainer_searchPage{
+    position: relative;
+    display: flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom : 10px;
+}
+.desc-container_searchPage{
+    display: flex;
+    flex-direction: column;
+    width : 700px;
+}
+.result-thumbnail_searchPage{
+    display: inline-block;
+    margin-right: 20px;
+    width: 360px;
+    height: 202px;
+    flex : 1;
+    border-radius: 15px;
+}
+.video_title_searchPage{
+    font-size: 20px;
+    font-weight: 700; 
+}
+.dot_searchPage{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.channel_desc_searchPage{
+    display: flex;
+    padding-top : 12px;
+    padding-bottom : 12px;
+    margin-bottom : 8px;
+    align-items: center;
+}
+.channel_name_searchPage{
+    font-size: 15px;
+    margin-left: 10px;
+    padding-top : 6px;
+}
+.channel-imag_searchPage{
+    padding-right : 8px;
+    width : 24px;
+    height: 24px;
+    border-radius: 20px;
+}
+.upload_details_searchPage {
+    display: flex;
+}
+.video-desc_searchPage{
+    width : 700px;
+}
+.video-status_searchPage{
+    margin-bottom: 8px;
+}

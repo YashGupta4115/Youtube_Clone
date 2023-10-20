@@ -1,0 +1,176 @@
+.primary-container {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.video-infos{
+    display: flex;
+    flex-direction: column;
+}
+.top-container-video-infos{
+    display: flex;
+}
+.video-title{
+    word-break: break-word;
+    font-family: "YouTube Sans","Roboto",sans-serif;
+    font-size: 20px;
+    line-height: 2.8rem;
+    font-weight: 600;
+    overflow: hidden;
+    max-height: 5.6rem;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    width: 640px;
+}
+.middle-container-video-infos{
+    display: flex;
+    justify-content: space-between;
+}
+.right-section-mid-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.channel-desc{
+    display: flex;
+    justify-content: space-between;
+}
+.channel-icon-landing{
+    width : 36px;
+}
+.channel-name-videoPage{
+    font-weight: 600;   
+}
+.channel-subs{
+    font-size: 12px;
+    font-weight: 400;
+}
+.channel_properties{
+    margin-left : 7px;
+    margin-right : 30px;
+    display: flex;
+    flex-direction: column;
+}
+.subs-button{
+    width : 94px;
+    height: 36px;
+    background-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+.subs-button:hover {
+    background-color: rgb(230, 228, 228);
+}
+.left-section-mid-container{
+    display: flex;
+    justify-content: space-between;
+}
+.like-dislike{
+    display: flex;
+    align-items: center;
+}
+.like-dislike-icon,.shareIcon{
+    height: 24px;
+    width : 24px;
+}
+.like-button{
+    width : 90px;
+    height: 36px;
+    background-color: rgb(220, 218, 218);
+    border: none;
+    display: flex;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    text-align: left;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 0;
+}
+.like-button:hover{
+    background-color: rgb(195, 192, 192);;
+}
+
+.like-button::before {
+    content: '|';
+    position: absolute;
+    top: 45%;
+    right: -2px; /* Place the divider on the right side of the button */
+    transform: translateY(-50%);
+    padding-left: 4px; /* Adjust padding to create space between divider and text */
+    color: white;
+    font-size: 25px;
+  }
+
+.dislike-button{
+    width : 60px;
+    height: 36px;
+    background-color: rgb(220, 218, 218);
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    padding-top : 8px;
+    padding-left: px;
+}
+.dislike-button:hover{
+    background-color: rgb(195, 192, 192);;
+}
+.share-button{
+    margin-left: 10px;
+    margin-right: 10px;
+    width : 100px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(220, 218, 218);
+    border: none;
+    padding-left: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.share-button:hover{
+    background-color: rgb(195, 192, 192);
+}
+
+.more-button{
+    
+    margin-right: 10px;
+    width : 36px;
+    height: 36px;
+    background-color: rgb(220, 218, 218);
+    border: none;
+    padding: 0px;
+    border-radius: 20px;
+}
+
+.more-button:hover{
+    background-color: rgb(195, 192, 192);
+}
+
+.bottom-container-video-infos{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(153, 152, 152);
+    margin-top : 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.top-desc{
+    display: flex;
+}
+
+.channel-name-videoPage , .video-description {
+    margin-bottom : 0px;
+}

@@ -1,0 +1,45 @@
+.sidebar{
+    display: flex;
+    z-index : 1;
+    flex-direction: column;
+    position : fixed;
+    top : 50px;
+    left: 0;
+    right : 1194px;
+    bottom: 0;
+    align-items: center;
+    width : 80px;
+    padding : 4px;
+    margin-top : 20px;
+   
+}
+.sidebarIconBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    width : 70px;
+    height: 33px;
+    padding-top : 26px;
+    padding-bottom: 14px;
+}
+.sidebarIconBox:hover {
+    background-color: rgba(0, 0, 0,0.1);;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sidebaricon{
+    width : 24px;
+    height : 24px;
+    
+}
+.sidebarIconDesc{
+    font-size: 10px;
+    margin-top : 0px;
+    margin-bottom : 20px;
+    margin-left : 2px;
+    padding-top: 3px;
+    text-align: center;
+}
+
+
