@@ -5,7 +5,6 @@ import MainFeed from "./Routes/home-feed/homeFeed.component";
 import VideoPlayBack from "./Routes/videoPlayback/Component/videoPlayback.component";
 import SearchResult from "./components/searchPage";
 import Shorts from "./Routes/shorts/shorts.component";
-import SignIn from "./components/SignIn.component";
 
 
 
@@ -31,7 +30,7 @@ const App = () => {
           </Route>
           <Route path="/video/:videoId" element={<VideoPlayBack />} />
         </Route>
-        <Route path='/user-sign-in' element={<SignIn/>}></Route>
+        {/* <Route path='/user-sign-in' element={<SignIn/>}></Route> */}
         <Route path = "/search/:searchField" element={<SearchResult/>}></Route>
       </Routes>
     </div>

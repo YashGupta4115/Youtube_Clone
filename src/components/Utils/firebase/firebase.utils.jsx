@@ -1,9 +1,7 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth, signInWithRedirect, GoogleAuthProvider} from 'firebase/auth';
+import { getAuth, signInWithRedirect, GoogleAuthProvider,signOut,onAuthStateChanged} from 'firebase/auth';
 import { getFirestore,doc,getDoc,setDoc } from 'firebase/firestore';
 
-import { useContext } from 'react';
-import { UserContext } from '../../../Context/user.context';
 
 
 const firebaseConfig = {
@@ -29,11 +27,12 @@ export const signInWithGoogleRedirect = () => signInWithRedirect(auth, provider)
 
 export const db = getFirestore();
 
-export const createUserDocumentFromAuth = async (userAuth,setCurrentUser) => {
+export const createUserDocumentFromAuth = async (userAuth,additionInformation={}) => {
+  if(!userAuth) return;
+  
   const userDocRef = doc(db, 'users', userAuth.uid);
 
   const userSnapshot = await getDoc(userDocRef);
-
   if (!userSnapshot.exists()) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
@@ -45,15 +44,12 @@ export const createUserDocumentFromAuth = async (userAuth,setCurrentUser) => {
         createdAt,
       });
     } catch (error) {
-      console.log('error creating the user', error.message);
+      alert('error creating the user', error.message);
     }
-    setCurrentUser(userAuth.displayName,userAuth.email);
   }
-
   return userDocRef;
 };
 
-const Firebase = ()=>{
-    const { setCurrentUser } = useContext(UserContext);
-    createUserDocumentFromAuth(setCurrentUser);
-}
+export const signOutUser = async() => await signOut(auth);
+
+export const onAuthStateChangedListener = (callback) => onAuthStateChanged(auth,callback);
