@@ -5,7 +5,7 @@ import ShortsPlayer from './shorts.player.component';
 
 
 const Shorts = () =>{
-    const videoUrl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q='shorts'&key=${ApiKey}`;
+    const videoUrl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q='shorts'&key=${ApiKey}`;
     const [stats , setStats] = useState([]); 
     useEffect(()=> {
         fetch(videoUrl)
