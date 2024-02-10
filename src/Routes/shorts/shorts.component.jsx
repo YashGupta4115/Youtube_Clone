@@ -14,11 +14,7 @@ const Shorts = () =>{
     },[videoUrl]);
 
     const [currVideoId , setCurrVideoId] = useState(0);
-    const [videoIds, setVideoIds] = useState([]);
     console.log(stats[currVideoId])
-    const handleNextVideo = ()=>{
-        setCurrVideoId(prevIndex => (prevIndex + 1) % stats.length)
-    };
     useEffect(()=>{
         const handleKeypress = (event)=>{
             event.preventDefault();

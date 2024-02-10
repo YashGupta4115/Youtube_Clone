@@ -1,5 +1,5 @@
 import { auth,createUserDocumentFromAuth,signInWithGoogleRedirect } from "../Utils/firebase/firebase.utils";
-import { useEffect,useContext } from "react";
+import { useEffect} from "react";
 import { getRedirectResult } from "firebase/auth";
 import UserImg from '../../assets/user-circle-svgrepo-com.svg';
 
