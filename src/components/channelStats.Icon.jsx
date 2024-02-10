@@ -13,9 +13,7 @@ const ChannelStats = ({ channelId }) => {
             .catch(error => {
                 console.error('Error fetching channel stats:', error);
             });
-    }, [channelUrl]); // Use [channelUrl] as the dependency array
-    
-    // Extract the channel icon URL from the channelStats and return the JSX
+    }, [channelUrl]); 
     const channelIconUrl = channelStats.snippet?.thumbnails?.default?.url;
     
     return (

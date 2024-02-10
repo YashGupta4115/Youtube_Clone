@@ -1,4 +1,8 @@
-.shortsPage{
+.short-container{
     margin-top : 60px;
-    margin-left: 50px;
+    margin-left: 80px;
+}
+.shorts-player{
+    margin: 0 auto;
+    border-radius: 20px;
 }

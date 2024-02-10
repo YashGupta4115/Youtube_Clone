@@ -14,9 +14,7 @@ const ChannelStatsSubs = ({ channelId }) => {
             .catch(error => {
                 console.error('Error fetching channel stats:', error);
             });
-    }, [channelUrl]); // Use [channelUrl] as the dependency array
-    
-    // Extract the channel icon URL from the channelStats and return the JSX
+    }, [channelUrl]); 
     const channelSubs = channelStats.statistics?.subscriberCount;
     
     return (

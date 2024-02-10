@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react';
 const FormatPublisedAtYt = (props)=>{
             const { givenPublisedAt } = props;
             const parsedGivenDateTime = new Date(givenPublisedAt);
-
-            // Get the current date and time
             const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
             useEffect(() => {

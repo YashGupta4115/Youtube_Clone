@@ -21,7 +21,7 @@ class MainFeed extends Component{
       }
       
       componentDidMount() {
-        fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&maxResults=5&key=${apiKey}`)
+        fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&maxResults=2&key=${apiKey}`)
         .then((response) => response.json())
         .then((data) => this.setState(() => {
           return {feeds : data.items}
